@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E8F7DD;
+}
+
+.navbar {
+  background-color: #66B539;
+  display: flex;
+  width: 100%;
+  height: 110px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.navbar h1 {
+  color: #374548;
+  font-family: "Itim", cursive;
+  font-size: 48px;
+  padding: 25px;
+}
+
+.frame {
+  width: 500px;
+  height: 400px;
+  background-color: #374548;
+}
+
+.view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+}
+
+.shtbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  /* border: 2px solid #374548;*/
+}
+
+.shoot {
+  background-color: #374548;
+  border: none;
+  font-family: "Itim", cursive;
+  font-size: 30px;
+  color: #E8F7DD;
+  width: 190px;
+  height: 66px;
+  border-radius: 50px;
+  transition-duration: 0.2s;
+}
+
+.shoot:hover {
+  background-color: #E8F7DD;
+  color: #374548;
+  border: 2px solid #374548;
+}
+
+.camera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}

@@ -26,12 +26,6 @@ body {
   padding: 25px;
 }
 
-.frame {
-  width: 500px;
-  height: 400px;
-  background-color: #374548;
-}
-
 .view {
   display: flex;
   justify-content: center;
@@ -65,9 +59,19 @@ body {
   border: 2px solid #374548;
 }
 
-.camera {
+.camera video {
+  width: 450px;
+  height: 400;
+  padding-top: 89px;
+}
+
+/*W: 450, H: 400*/
+.frame {
+  width: 500px;
+  height: 450px;
+  background-color: #374548;
   display: flex;
   justify-content: center;
-  align-items: center;
-
+  align-content: center;
+  position: relative;
 }

@@ -24,22 +24,39 @@ function App() {
   useEffect(() => {
     getVideo()
   }, [videoRef]);
-  
+
+  const takePhoto = () => {
+    const width = 414;
+    const height = width / (16/9);
+    
+    let video = videoRef.current;
+    let photo = photoRef.current;
+
+    photo.width = width;
+    photo.heigh = height;
+
+    let ctx = photo.getContext('2d');
+    ctx.drawImage(video, 0, 0, width, height);
+  }
 
   return <div>
+
     <nav className="navbar">
       <h1>Memory Booth</h1>
     </nav>
+
     <div className="view"> 
-      <div class="frame">
+      <div className="frame">
         <div className="camera">
           <video ref={videoRef}></video>
         </div>
       </div>
     </div>
+
     <div className="shtbutton">
-      <Shoot />
+      <Shoot onClick={takePhoto}/>
     </div>
+
   </div>
 }
 
